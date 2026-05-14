@@ -31,10 +31,9 @@ namespace ExoApi.Repositories
     {
         return _context.Projetos.Find(id);
     }
-    public void atualizar(int id, Projeto projeto)
+    public void Atualizar(int id, Projeto projeto)
     {
         Projeto projetoBuscado = _context.Projetos.Find(id);
-
         if (projetoBuscado != null)
         {
           projetoBuscado.NomeDoProjeto = projeto.NomeDoProjeto;
